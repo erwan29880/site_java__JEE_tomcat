@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+  <servlet>
+    <servlet-name>Accueil</servlet-name>
+    <servlet-class>fr.erwan.servlets.Accueil</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Accueil</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Administration</servlet-name>
+    <servlet-class>fr.erwan.servlets.Administration</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Administration</servlet-name>
+    <url-pattern>/connection</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Authentification</servlet-name>
+    <servlet-class>fr.erwan.servlets.Authentification</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Authentification</servlet-name>
+    <url-pattern>/enregistrement</url-pattern>
+  </servlet-mapping>
+  
+  <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+        </jsp-property-group>
+    </jsp-config>
+</web-app>
